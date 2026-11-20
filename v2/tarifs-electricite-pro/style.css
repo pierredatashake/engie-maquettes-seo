@@ -1,0 +1,39 @@
+@font-face{font-family:Lato;src:url(fonts/lato-regular.woff2) format("woff2");font-weight:400}
+@font-face{font-family:Lato;src:url(fonts/lato-bold.woff2) format("woff2");font-weight:700}
+@font-face{font-family:Lato;src:url(fonts/lato-heavy.woff2) format("woff2");font-weight:900}
+:root{--bleu:#007ACD;--nuit:#002457;--txt:#202020;--gris:#757575;--fond:#f4f6f6;--vert:#23d1b5}
+*{box-sizing:border-box}body{margin:0;font-family:Lato,Arial,sans-serif;color:var(--txt);font-size:16px;line-height:1.6;background:#fff}
+a{color:var(--bleu)}
+.proto{background:#101010;color:#fff;font-size:12px;text-align:center;padding:4px}
+.top{display:flex;align-items:center;justify-content:space-between;max-width:1280px;margin:0 auto;padding:14px 24px}
+.top .seg a{color:var(--txt);text-decoration:none;margin-right:28px;font-size:15px}
+.logo{display:flex;align-items:center;gap:10px;color:var(--bleu);font-weight:700;font-size:14px;text-decoration:none}.logo img{height:30px}
+.cta{display:flex;gap:12px}.btn{display:inline-block;padding:10px 18px;font-weight:700;font-size:14px;text-decoration:none;border:1px solid var(--bleu)}
+.btn.p{background:var(--bleu);color:#fff}.btn.o{color:var(--bleu);background:#fff}
+nav.main{border-top:1px solid #e6e6e6;border-bottom:3px solid var(--bleu)}nav.main div{max-width:1280px;margin:0 auto;padding:12px 24px;display:flex;gap:28px;font-weight:700;font-size:15px}
+nav.main a{color:var(--nuit);text-decoration:none}nav.main a.on{color:var(--bleu);text-decoration:underline}
+.crumb{max-width:1280px;margin:0 auto;padding:10px 24px;font-size:12px;color:var(--gris)}.crumb a{color:var(--gris)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.hero{display:grid;grid-template-columns:1fr 470px;gap:40px;align-items:start;padding:10px 0 30px}
+.tag{display:inline-block;background:var(--nuit);color:#fff;font-size:12px;font-weight:700;padding:3px 10px;margin-bottom:12px}
+h1{font-size:38px;line-height:1.15;color:var(--nuit);font-weight:900;margin:0 0 12px}
+.byline{font-size:13px;color:var(--gris);border-top:1px solid #e6e6e6;border-bottom:1px solid #e6e6e6;padding:8px 0;margin:10px 0 16px}
+.byline b{color:var(--txt)}
+.lead{font-size:17px;font-weight:700}
+.retenir{background:var(--fond);border-left:4px solid var(--vert);padding:16px 20px;margin:18px 0}
+.retenir h2{font-size:18px;margin:0 0 6px;color:var(--nuit)}.retenir li{margin:6px 0}
+.src{display:inline-block;font-size:11px;background:#e8f2fa;color:var(--bleu);padding:1px 7px;margin-left:4px;font-weight:700}
+aside.grille{border:1px solid #d9d9d9;box-shadow:0 6px 24px rgba(0,36,87,.12)}
+aside.grille .h{background:var(--nuit);color:#fff;padding:14px 18px}aside.grille .h small{display:block;opacity:.75;font-size:12px}aside.grille .h b{font-size:19px}
+.prof{display:flex;gap:6px;padding:12px 18px 0;font-size:12px}.prof span{border:1px solid #cfd8dc;padding:4px 8px}.prof span.on{border-color:var(--bleu);color:var(--bleu);font-weight:700}
+.offre{display:grid;grid-template-columns:1fr auto;gap:4px 10px;padding:12px 18px;border-bottom:1px solid #eee}
+.offre b{color:var(--nuit)}.offre .px{font-size:22px;font-weight:900;color:var(--bleu);text-align:right}.offre small{color:var(--gris);font-size:12px}
+.offre.trv .px{color:var(--nuit)}
+.grille .f{padding:14px 18px;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--gris)}
+h2{font-size:28px;color:var(--nuit);font-weight:900;margin:36px 0 10px;line-height:1.2}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:15px}th,td{border:1px solid #dfe3e5;padding:10px 12px;text-align:left;vertical-align:top}th{background:var(--fond);color:var(--nuit)}
+.cal{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:14px 0}.cal div{background:var(--fond);padding:14px}.cal b{display:block;color:var(--bleu);font-size:20px}
+details{border-bottom:1px solid #e6e6e6;padding:12px 0}summary{font-weight:700;color:var(--bleu);cursor:pointer}
+footer{margin-top:50px;background:var(--fond);padding:30px 24px;font-size:13px;color:var(--gris);border-top:3px solid;border-image:linear-gradient(90deg,#005AA0,#23D2B5) 1}
+@media(max-width:700px){.top .seg,.cta .o,nav.main{display:none}.hero{grid-template-columns:1fr}h1{font-size:29px}.cal{grid-template-columns:1fr 1fr}.wrap{padding:0 16px}}
+@media(max-width:700px){.cta .btn.p{white-space:nowrap;font-size:12px;padding:8px 10px}.logo{font-size:12px}}
